@@ -4,91 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이력서</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-size: 1.2em;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        .item {
-            margin-bottom: 10px;
-        }
-        .item-title {
-            font-weight: bold;
-            color: #555;
-        }
-        .item-description {
-            margin-left: 10px;
-            color: #777;
-        }
-        .photo {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>이동현</h1>
+    <header>
+        <img src="photo.jpg" alt="프로필 이미지" class="profile-img">
+        <h1 class="animate-fade-in">이동현</h1>
+        <p class="animate-slide-in">프론트엔드</p>
+    </header>
+    <section class="contact">
+        <h2>연락처</h2>
         <p>이메일: le1117@dongyang.ac.kr</p>
-
-        <img src="photo.jpg" alt="프론트엔드 관련 사진" class="photo">
-
-        <div class="section">
-            <div class="section-title">기술 스택</div>
-            <div class="item">
-                <div class="item-description">HTML, CSS, JavaScript, React</div>
-            </div>
+    </section>
+    <section class="skills">
+        <h2>기술 스택</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+    <section class="education">
+        <h2>학력</h2>
+        <p>동양미래대학교 컴퓨터소프트웨어학과(2024 ~ )</p>
+    </section>
+    <section class="experience">
+        <h2>기술 개발 경험</h2>
+        <div class="job">
+            <h3>중고차 사이트</h3>
+            <p>웹 개발자</p>
+            <p>2024</p>
+            <ul>
+                <li>주요 프로젝트: 중고차 판매 사이트 개발</li>
+                <li>사용 기술: HTML, CSS</li>
+            </ul>
         </div>
-
-        <div class="section">
-            <div class="section-title">대학 정보</div>
-            <div class="item">
-                <div class="item-title">동양미래대 (2024 ~)</div>
-                <div class="item-description">컴퓨터소프트웨어학과</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">기술 개발 경험</div>
-            <div class="item">
-                <div class="item-title">중고차 사이트</div>
-                <div class="item-description">프론트엔드 개발자 - 주요 업무: Html, Css 활용 웹페이지 제작</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">관심 기술 분야</div>
-            <div class="item">
-                <div class="item-description">사용자 인터페이스 디자인, 프론트엔드 성능 최적화, React, Next.js</div>
-            </div>
-        </div>
-    </div>
+    </section>
+    <section class="interest">
+        <h2>관심 기술 분야</h2>
+        <p>인공지능, 머신러닝, React</p>
+    </section>
+    <footer>
+        <p>연락처: le1117@dongyang.ac.kr | 전화: 010-1234-5678</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+}
+
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    margin-top: 170px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding-left: 1.5em;
+    position: relative;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: white;
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
